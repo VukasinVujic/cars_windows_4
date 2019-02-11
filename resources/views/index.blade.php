@@ -8,10 +8,14 @@
 </head>
 <body>
 
+    <h1>INDEX BLADE FILE</h1>
+
     <ul>
         @foreach ($cars as $car)
         
-        <li>{{ $car->title }}</li>
+        <li><a href="{{ 'http://localhost/VIVIFY/napredni/Laravel/Predavanje_3/radOdKuce/Pon_11_02/cars_windows_4/public/cars/' . $car->id }}">{{ $car->title }}</a></li>
+
+
 
         @endforeach
 
